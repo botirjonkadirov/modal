@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Varela', sans-serif;
+height: 100vh;
+background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(./nexia2.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+.hidden{
+    display: none;
+}
+.bt {
+    border: 0;
+    font-family: inherit;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.push{
+    background-color: gray;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.5s;
+}
+
+.push:hover{
+    background-color: #3a3d40;
+}
+.modal {
+    position: fixed;
+    max-width: 600px;
+    width: 100%;
+    background-color: #f4f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.closerBtn {
+    color: #222;
+    font-size: 20px;
+}
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.modalTitle {
+    margin-bottom: 15px;
+}
+.overLay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
